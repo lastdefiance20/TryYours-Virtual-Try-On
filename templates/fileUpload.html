@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload complete</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='./style.css')}}">
+</head>
+<body>
+    <h1>File upload success!</h1>
+
+    <div class="centerwrapper" id="centerwrapper">
+        <button type="button" onclick="location.href='/' ">go back</button>
+    </div>
+
+    <p>
+        <img src="{{url_for('static', filename='./origin_web.jpg')}}">
+    </p>
+</body>
+</html>

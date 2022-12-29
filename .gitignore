@@ -1,0 +1,5 @@
+# don't upload large pth files
+
+HR-VITON-main/gen.pth
+HR-VITON-main/mtviton.pth
+Graphonomy-master/inference.pth

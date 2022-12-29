@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OTO</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='./favicon.png')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='./style.css')}}">
+</head>
+<body>
+    <h1>Online Try On website</h1>
+    
+    <img src="{{url_for('static', filename='./Logo.png')}}">
+    
+    <h3>Team member of "Online Shop, Here We Go"<h3>
+    <a href="https://github.com/lastdefiance20">Jaeyoon Jung</a>
+    <br>
+    <a href="https://github.com/hswek">Seungwoo Han</a>
+    <br>
+    <br>
+    
+    <div class="container">
+        <h2>Upload your image</h2>
+        <form action="/fileUpload" method="POST" enctype = "multipart/form-data">
+            <input type = "file" name = "file" id="File"/>
+
+            <input type = "submit"/>
+        </form>
+        
+        <h2>Upload cloth image</h2>
+        <form action="/fileUpload_cloth" method="POST" enctype = "multipart/form-data">
+            <input type = "file" name = "file" id="File"/>
+
+            <input type = "submit"/>
+        </form>
+            
+        <div class="image-show" id="image-show"></div>
+           
+        <button class="success" onclick="location.href='/view'">Generate Image</button>
+    </div>
+
+    <script src="{{url_for('static', filename='./index.js')}}"></script>
+</body>
+</html>
