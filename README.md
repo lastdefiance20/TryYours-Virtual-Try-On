@@ -10,7 +10,7 @@ You can simply try it using colab
 
 |<img src="https://avatars.githubusercontent.com/lastdefiance20" width="100">| <img src="https://avatars.githubusercontent.com/hswek" width="100">|
 |-|-|
-|[Jaeyoon Jung](https://github.com/lastdefiance20), soongsil university|[Sungwoo Han](https://github.com/hswek), soongsil university|
+|[Jaeyoon Jung](https://github.com/lastdefiance20), soongsil university|[Seungwoo Han](https://github.com/hswek), soongsil university|
 
 ## Process Overview
 ![process overview image](./figures/process_overview.png)
