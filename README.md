@@ -1,18 +1,39 @@
-# TryYours
+# TryYours - High Resolution Virtual Try On site using HR-VITON.
+![teaser image](./figures/teaser.png)
+>> [KR presentation](./TryYours_presentation_kr.pdf)
 
-1. INPUT: ./origin.jpg
-2. origin.jpg를 1024*768로 변경 (7~10 line)
-3. openpose 좌표 추출 및 ./HR-VITON-main/test/test/openpose_json/00001_00_keypoints.json 에 좌표 저장(11~12 line)
-4. 512*384 size 변경 (14~16 line)
-5. segmentation 이미지 생성 (라이브러리) (20~25 line)
-6. 5를 이용해서 배경 제거 (30~45 line)
+## Team member
 
-* 7. 새로운 segmentation label 이미지 생성 및 ./HR-VITON-main/test/test/ image-parse-v3/00001_00.png 에 저장 (input= ./origin.png) (unet) (49~50 line) ()
+|<img src="https://avatars.githubusercontent.com/lastdefiance20" width="100">| <img src="https://avatars.githubusercontent.com/hswek" width="100">|
+|-|-|
+|[Jaeyoon Jung](https://github.com/lastdefiance20), soongsil university|[Sungwoo Han](https://github.com/hswek), soongsil university|
 
-* 8. densepose 이미지 생성 및 ./HR-VITON-main/test/test/densepose/00001_00.jpg 에 저장 (unet) (input= ./origin.png) (57~58)
-9. HD-VTION 돌리기 
+## Colab Demo
+You can simply try it using colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1fP5Wia4ukTp6WC5FlSa7InW7cOLXCePy?usp=sharing)
 
+## Process Overview
+![process overview image](./figures/process_overview.png)
 
+## Code Running Environment
+>##run at ubuntu
+>**use docker image of paperspace gradient Scratch docker**
+>https://hub.docker.com/r/paperspace/gradient-base 
+> **docker tag** \
+> pt112-tf29-jax0314-py39-20220803
 
+## Installation
+~~see [INSTALL.md](./INSTALL.md) for the installation~~
+we will add INSTALL.md soon.
 
-7과 8을 변경하면 됨
+## References
+HR-VITON
+https://github.com/sangyun884/HR-VITON
+Posenet
+https://github.com/rwightman/posenet-python
+Graphonomy
+https://github.com/Gaoyiminggithub/Graphonomy
+detectron2
+https://github.com/facebookresearch/detectron2
+cloth image segmentation
+https://github.com/ternaus/cloths_segmentation
